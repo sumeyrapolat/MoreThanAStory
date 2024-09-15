@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1036153893918",
+    "project_id": "morethanastory-33bb9",
+    "storage_bucket": "morethanastory-33bb9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1036153893918:android:bfe4516e85e2aa3334ea0f",
+        "android_client_info": {
+          "package_name": "com.sumeyra.morethanastory"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDcMwG_m3tAolPswIYsXBGHqK09iwAH4WY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
