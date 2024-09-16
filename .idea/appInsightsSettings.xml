@@ -8,10 +8,10 @@
             <InsightsFilterSettings>
               <option name="connection">
                 <ConnectionSetting>
-                  <option name="appId" value="PLACEHOLDER" />
-                  <option name="mobileSdkAppId" value="" />
-                  <option name="projectId" value="" />
-                  <option name="projectNumber" value="" />
+                  <option name="appId" value="com.sumeyra.morethanastory" />
+                  <option name="mobileSdkAppId" value="1:1036153893918:android:bfe4516e85e2aa3334ea0f" />
+                  <option name="projectId" value="morethanastory-33bb9" />
+                  <option name="projectNumber" value="1036153893918" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />
