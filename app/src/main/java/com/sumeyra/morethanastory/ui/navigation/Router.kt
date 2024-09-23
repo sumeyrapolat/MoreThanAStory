@@ -8,6 +8,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.navArgument
 import com.sumeyra.morethanastory.model.repository.AuthRepository
+import com.sumeyra.morethanastory.ui.screens.AddStoryScreen
 import com.sumeyra.morethanastory.ui.screens.FeedScreen
 import com.sumeyra.morethanastory.ui.screens.LoginScreen
 import com.sumeyra.morethanastory.ui.screens.SignUpScreen
@@ -33,6 +34,11 @@ fun Router(navController: NavHostController, authRepository: AuthRepository) {
 
         composable("feed") {
             FeedScreen(navController)
+        }
+
+        composable("addstory/{words}", arguments = listOf(navArgument("words") { type = NavType.StringType })) { backStackEntry ->
+            val words = backStackEntry.arguments?.getString("words")?.split(",") ?: emptyList()
+            AddStoryScreen(navController = navController, words = words)
         }
 //
 //        composable("favorites") {

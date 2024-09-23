@@ -94,3 +94,28 @@ val cardGradientColor = Brush.linearGradient(
     end = Offset(0f,Float.POSITIVE_INFINITY),
     tileMode = TileMode.Clamp
 )
+
+val addStoryCardColor = Brush.linearGradient(
+    colors = listOf(
+        LightPurple,
+        PastelPink,
+        LightYellow,
+        PastelPink,
+        LightPurple
+    ),
+    start = Offset(0f, 0f),
+    end = Offset(Float.POSITIVE_INFINITY, 0f),
+    tileMode = TileMode.Clamp
+)
+
+val addStoryButtonColor = Brush.linearGradient(
+    colors = listOf(
+        MediumPurple,
+        PastelPink,
+        PastelPink,
+        MediumPurple
+    ),
+    start = Offset(0f, 0f),
+    end = Offset(Float.POSITIVE_INFINITY, 0f),
+    tileMode = TileMode.Clamp
+)

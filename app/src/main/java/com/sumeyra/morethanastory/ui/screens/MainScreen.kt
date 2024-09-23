@@ -9,6 +9,7 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Bookmarks
 import androidx.compose.material.icons.filled.Home
 import androidx.compose.material.icons.filled.Menu
+import androidx.compose.material.icons.filled.Person
 import androidx.compose.material.icons.filled.TravelExplore
 import androidx.compose.material3.DropdownMenu
 import androidx.compose.material3.DropdownMenuItem
@@ -53,16 +54,16 @@ fun MainScreen(navController: NavHostController, authRepository: AuthRepository)
             onClick = { navController.navigate("feed") }
         ),
         BottomNavItem(
-            route = "category",
-            icon = Icons.Filled.TravelExplore,
-            label = "Category",
-            onClick = { navController.navigate("category") }
-        ),
-        BottomNavItem(
             route = "favorites",
             icon = Icons.Filled.Bookmarks,
-            label = "Saved",
+            label = "Favorite",
             onClick = { navController.navigate("favorites") }
+        ),
+        BottomNavItem(
+            route = "profile",
+            icon = Icons.Filled.Person,
+            label = "Profile",
+            onClick = { navController.navigate("profile") }
         )
     )
 
@@ -80,7 +81,7 @@ fun MainScreen(navController: NavHostController, authRepository: AuthRepository)
                             Icon(
                                 Icons.Default.Menu,
                                 contentDescription = "Menu",
-                                modifier = Modifier.size(26.dp))
+                                modifier = Modifier.size(22.dp))
                         }
 
                         DropdownMenu(
