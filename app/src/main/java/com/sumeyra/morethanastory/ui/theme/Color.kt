@@ -1,6 +1,9 @@
 package com.sumeyra.morethanastory.ui.theme
 
+import androidx.compose.ui.geometry.Offset
+import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.TileMode
 
 val Purple80 = Color(0xFFD0BCFF)
 val PurpleGrey80 = Color(0xFFCCC2DC)
@@ -42,3 +45,52 @@ val DarkerPurple = Color(0xFFA573CA)
 val LightBlue = Color(0xFFB8CEFF)
 val DarkerSoftBlue = Color(0xFFB7CDFF)
 val MediumBlue = Color(0xFFA0F1EA)
+
+val categoryGradientColor = Brush.linearGradient(
+    colors = listOf(
+        MediumPurple,
+        MediumBlue,
+    ),
+    start = Offset(0f, 0f),
+    end = Offset( Float.POSITIVE_INFINITY,0f),
+    tileMode = TileMode.Clamp
+)
+
+val backCardGradientColor = Brush.linearGradient(
+    colors = listOf(
+        MediumPurple.copy(0.7f),
+        PastelPink.copy(0.7f),
+        MediumBlue.copy(0.7f),
+        PastelPink.copy(0.7f),
+        MediumPurple.copy(0.7f)
+    ),
+    start = Offset(0f, 0f),
+    end = Offset(0f,Float.POSITIVE_INFINITY),
+    tileMode = TileMode.Clamp
+)
+
+val wordCardGradientColor = Brush.linearGradient(
+    colors = listOf(
+        MediumPurple,
+        PastelPink,
+        MediumBlue,
+        PastelPink,
+        MediumPurple
+    ),
+    start = Offset(0f, 0f),
+    end = Offset(0f,Float.POSITIVE_INFINITY),
+    tileMode = TileMode.Clamp
+)
+
+val cardGradientColor = Brush.linearGradient(
+    colors = listOf(
+        MediumPurple,
+        MediumPink,
+        MediumBlue,
+        MediumPink,
+        MediumPurple
+    ),
+    start = Offset(0f, 0f),
+    end = Offset(0f,Float.POSITIVE_INFINITY),
+    tileMode = TileMode.Clamp
+)
