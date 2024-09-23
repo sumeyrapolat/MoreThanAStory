@@ -60,7 +60,7 @@ fun BottomBar(navController: NavController, bottomNavItems: List<BottomNavItem>,
                                 imageVector = item.icon,
                                 contentDescription = item.label,
                                 tint = if (selected) Color.White else Color.Gray,
-                                modifier = Modifier.size(26.dp)
+                                modifier = Modifier.size(22.dp)
                             )
                             if (selected) {
                                 Spacer(modifier = Modifier.width(8.dp))
