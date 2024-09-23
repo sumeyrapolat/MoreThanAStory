@@ -70,7 +70,7 @@ fun MainScreen(navController: NavHostController, authRepository: AuthRepository)
         topBar = {
             if (currentDestination == "feed" || currentDestination == "favorites" || currentDestination == "category") {
                 TopAppBar(
-                    title = { Text("\uD835\uDC11\uD835\uDC14\uD835\uDC01\uD835\uDC14+ \uD835\uDC0D\uD835\uDC04\uD835\uDC16\uD835\uDC12") },
+                    title = { Text("") },
                     colors = TopAppBarDefaults.topAppBarColors(
                         containerColor = Color.White, // Background color
                         titleContentColor = Color.Black // Title text color

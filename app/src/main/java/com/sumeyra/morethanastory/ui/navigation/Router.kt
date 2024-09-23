@@ -8,6 +8,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.navArgument
 import com.sumeyra.morethanastory.model.repository.AuthRepository
+import com.sumeyra.morethanastory.ui.screens.FeedScreen
 import com.sumeyra.morethanastory.ui.screens.LoginScreen
 import com.sumeyra.morethanastory.ui.screens.SignUpScreen
 import com.sumeyra.morethanastory.viewmodel.AuthViewModel
@@ -29,10 +30,10 @@ fun Router(navController: NavHostController, authRepository: AuthRepository) {
             val signInViewModel = hiltViewModel<AuthViewModel>()
             LoginScreen(navController, signInViewModel)
         }
-//
-//        composable("feed") {
-//            FeedScreen(navController)
-//        }
+
+        composable("feed") {
+            FeedScreen(navController)
+        }
 //
 //        composable("favorites") {
 //            FavoriteScreen(navController)
